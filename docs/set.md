@@ -220,3 +220,4 @@ Sets are automatically garbage collected when no more strong references to it ar
 
 # DEV
 - I was spitballing the type signatures when I wrote this so I'm not actually sure if the type system would be happy with some of these signatures (for example things like `set.add` may need to become `<T...>( set<T...>, ...any ) -> set<T...>`)
+- It is possible to revert back to an object-less structure by making tables returned by `set.create` immutable and changing their type signature to `{ [any]: true? }`, though this does not fix the fact that we bear the burden of making sure users understand that `false` is nowhere to be found despite the fact that that's how sets work in every other language
