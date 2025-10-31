@@ -1,4 +1,6 @@
 # `events` Library
+⚠️ UNFINISHED
+
 The `@minecraft/events` library exposes the game events provided by `Paper` and `Bukkit`.
 These events are all implemented as `luau-mc` [signals]().
 
